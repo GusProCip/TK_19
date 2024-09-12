@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ТК_19</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+         <style>
+
+            body {
+                background-color: rgb(35, 35, 35);
+            }
+
+            .blockheader {
+                display: inline-block;
+                text-align: center;
+                width: 100%;
+            }
+
+            .header {
+                display: inline-block;
+                width: 90%;
+                margin: 35px 0px;
+                padding: 20px 15px;
+                border-radius: 10px;
+                border-style: solid;
+                border-width: 2px;
+                border-color: #ffffff;
+                color: #ffffff;
+            }
+
+            .text-center {
+                text-align: center !important;
+                width: 100%;
+            }
+
+            .col-8 {
+                flex: 0 0 auto;
+                width: 55%;
+            }
+
+            .col-4 {
+                flex: 0 0 auto;
+                width: auto;
+                padding-right: 0;
+                display: inline-flex;
+                align-items: center;
+            }
+
+            .col-4 img {
+                border-radius: 10px;
+                height: auto;
+            }
+
+            .block {
+                display: inline-block;
+                text-align: center;
+                width: 100%;
+            }
+
+            .carblock {
+                display: inline-block;
+                text-align: center;
+                width: 90%;
+                margin: 35px 0px;
+                padding: 30px 15px;
+                border-radius: 10px;
+                border-style: solid;
+                border-width: 2px;
+                border-color: #ffffff;
+            }
+
+            .carousel {
+                display: inline-block;
+                text-align: center;
+                width: 70%;
+                height: 500px;
+                margin-bottom: 0;
+            }
+
+            .carousel-inner {
+                display: inline-block;
+                text-align: center;
+                border-radius: 10px;
+                width: 750px;
+            }
+
+            .carousel-item{
+                height: 500px;
+            }
+
+            .carousel-item img {
+                height: 500px;
+            }
+
+            .carousel-indicators {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                z-index: 2;
+                display: flex;
+                justify-content: center;
+                padding: 0;
+                margin: 0% 15%;
+            }
+
+            .cardblock {
+                display: inline-block;
+                text-align: center;
+                width: 100%;
+            }
+
+            .cards {
+                display: inline-block;
+                text-align: center;
+                width: 90%;
+                margin: 35px 0px;
+                padding: 30px 15px;
+                border-radius: 10px;
+                border-style: solid;
+                border-width: 2px;
+                border-color: #ffffff;
+                color: #ffffff;
+            }
+
+            .card-body {
+                display: inline-flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-self: flex-end;
+            }
+
+            .btn-primary {
+                align-self: flex-end;
+            }
+
+            .row {
+                display: inline-flex;
+                justify-content: space-around;
+            } 
+
+            .col {
+                display: inline-flex;
+            } 
+
+            .blockform {
+                display: inline-block;
+                text-align: center;
+                padding: 35px 0px 70px 0px;
+                width: 100%;
+                height: auto;
+            }
+
+            .forma {
+                display: inline-block;
+                text-align: center;
+                padding: 20px;
+                width: 90%;
+                height: auto;
+                border-radius: 10px;
+                border-style: solid;
+                border-width: 2px;
+                border-color: #ffffff;
+                color: #ffffff;
+            }
+
+            form {
+                display: inline-block;
+                width: 70%;
+            }
+
+            .form-text {
+                color: #ffffff;
+            }
+
+            .form-check {
+                display: block;
+                text-align: left;
+                min-height: 1.5rem;
+                padding-left: 1.5em;
+                margin-bottom: .125rem;
+            }
+
+        </style>
+    </head>
+    
+    <body>
+
+        <div class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">RetroCarsMuseum</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Tickets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">TestDrive</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">AboutUs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Donate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacts</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+        </div>
+
+        <div class="blockheader">
+            <div class="header">
+                <div class="container text-center">            
+                    <div class="row">           
+                        <div class="col-8">
+                            <h1>Welcome RetroCarsMuseum</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis maximus lectus, id rhoncus lorem. Vivamus eget molestie quam. 
+                                Fusce viverra vehicula dui. Phasellus placerat, nunc ac volutpat feugiat, urna quam aliquam ex, eu gravida felis turpis a eros. 
+                                Aenean varius mauris ac libero finibus semper. Nullam sed ultricies lacus. Integer varius justo ut est pretium tempus. 
+                                Nunc cursus lectus sed orci sodales ullamcorper id a justo. Morbi vitae turpis eu sapien blandit convallis a quis lacus. 
+                                Nullam ullamcorper nisi tortor, in lobortis massa facilisis in. Etiam elementum aliquam lectus non varius. 
+                                Cras mollis nunc sed nulla posuere dictum. Ut elit velit, porta lacinia efficitur sed, laoreet eget dolor. 
+                                Donec vulputate, magna id eleifend accumsan, urna tellus malesuada justo, non rhoncus augue arcu ac tellus. 
+                                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec mattis dolor id orci ornare, 
+                                vel vestibulum turpis luctus.
+                                Donec cursus mauris bibendum nulla faucibus consequat. Maecenas dapibus lacus sed erat porta, ac egestas purus faucibus. 
+                                Ut pretium nulla id enim finibus porta. Donec vel magna eleifend, accumsan augue quis, vestibulum eros. 
+                                Phasellus sit amet diam et quam consequat pretium nec ut est. Mauris et vehicula lacus. 
+                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.           
+                                </p>
+                        </div>            
+                        <div class="col-4">
+                            <img src="https://www.fiesta.ru/uploads/slider_image/image/153850/v880_4.jpg" width="550" height="450">
+                        </div>           
+                    </div>           
+                </div>
+            </div>
+        </div>
+
+        <div class="block">
+            <div class="carblock">
+
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+                    <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <img src="https://img-fotki.yandex.ru/get/6210/112414370.5e/0_e8782_bfdc9cfb_orig.jpg" class="d-block w-100" alt="...">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="https://a.d-cd.net/ac78e9u-960.jpg" class="d-block w-100" alt="...">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="https://cms.enjourney.ru/upload/polezno_znat/item/1462x998/520_7.png" class="d-block w-100" alt="...">
+                    </div>
+                    
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="cardblock">
+            <div class="cards">
+                <h2>Pearls Of The Collection</h2>
+                <div class="row">
+                    <div class="col">
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://s.auto.drom.ru/i24247/c/photos/fullsize/rolls-royce/phantom/rolls-royce_phantom_964817.jpg" class="card-img-top" alt="..." height="200">
+                            <div class="card-body">
+                            <h5 class="card-title">Rolls-Royce Phantom IV</h5>
+                            <p class="card-text">One of the rarest Rolls-Royce models, produced exclusively for royalty and heads of state.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                    
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_65784eb06aba5b2d76b70ab6_657ae34d43f35b297b85d000/scale_1200" class="card-img-top" alt="..." height="200">
+                            <div class="card-body">
+                            <h5 class="card-title">Volkswagen Transporter T1</h5>
+                            <p class="card-text">One of first microbuses for citizens in the world, that got popularity with the hippy culture representers.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col">
+                    
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_65784eb06aba5b2d76b70ab6_657abcba5b0e751ba742e650/scale_1200" class="card-img-top" alt="..." height="200">
+                            <div class="card-body">
+                            <h5 class="card-title">Mercedes-Benz W100</h5>
+                            <p class="card-text">The prestige and rarety limousine that became the really symbol of luxury at its time.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col">
+                    
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://i.pinimg.com/736x/2b/aa/99/2baa999841828b1a06477375afaa8c6f.jpg" class="card-img-top" alt="..." height="200">
+                            <div class="card-body">
+                            <h5 class="card-title">Ford Mustang</h5>
+                            <p class="card-text">The Mustang's styling, with its long hood and short deck, proved wildly popular.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="blockform">
+            <div class="forma">
+                <form>
+                    <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+
+        <div class="footer">
+
+            <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+                <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <div class="me-5 d-none d-lg-block">
+                    <span>Get connected with us on social networks:</span>
+                </div>
+
+                <div>
+                    <a href="" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <!-- Right -->
+                </section>
+                <!-- Section: Social media -->
+            
+                <!-- Section: Links  -->
+                <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                        <i class="fas fa-gem me-3"></i>Company name
+                        </h6>
+                        <p>
+                        Here you can use rows and columns to organize your footer content. Lorem ipsum
+                        dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+            
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                        Products
+                        </h6>
+                        <p>
+                        <a href="#!" class="text-reset">Angular</a>
+                        </p>
+                        <p>
+                        <a href="#!" class="text-reset">React</a>
+                        </p>
+                        <p>
+                        <a href="#!" class="text-reset">Vue</a>
+                        </p>
+                        <p>
+                        <a href="#!" class="text-reset">Laravel</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+            
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                        Useful links
+                        </h6>
+                        <p>
+                        <a href="#!" class="text-reset">Pricing</a>
+                        </p>
+                        <p>
+                        <a href="#!" class="text-reset">Settings</a>
+                        </p>
+                        <p>
+                        <a href="#!" class="text-reset">Orders</a>
+                        </p>
+                        <p>
+                        <a href="#!" class="text-reset">Help</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+            
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                        <p>
+                        <i class="fas fa-envelope me-3"></i>
+                        info@example.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                        <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                    </div>
+                    <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+                </section>
+                <!-- Section: Links  -->
+            
+                <!-- Copyright -->
+                <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                © 2021 Copyright:
+                <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+                </div>
+                <!-- Copyright -->
+            </footer>
+            <!-- Footer -->
+        </div>
+
+    </body>
+</html>
